@@ -1,0 +1,101 @@
+.sIcon {
+  display: inline-block;
+  width: 30px;
+  height: 30px;
+  background-image: url(imgs/icons-white.png);
+  background-size: 100% auto;
+  background-repeat: no-repeat;
+  background-position: center bottom;
+
+    &.sIcon-left {
+      float: left;
+    }
+    &.sIcon-right {
+      float: right;
+    }
+    &.sIcon-hide {
+        display: none;
+    }
+
+    &.sIcon-black {
+        background-image: url(imgs/icons-black.png);
+    }
+    &.sIcon-gray {
+        background-image: url(imgs/icons-gray.png);
+    }
+
+    //icons
+    &.sIcon-up {
+        background-position: center 0%;
+    }
+    &.sIcon-down {
+        background-position: center 1.01%;
+    }
+    &.sIcon-prev {
+        background-position: center 3.03%;
+    }
+    &.sIcon-next {
+        background-position: center 2.02%;
+    }
+    &.sIcon-add {
+        background-position: center 4.04%;
+    }
+    &.sIcon-edit {
+        background-position: center 5.05%;
+    }
+    &.sIcon-remove {
+        background-position: center 6.06%;
+    }
+    &.sIcon-update {
+        background-position: center 7.07%;
+    }
+    &.sIcon-download {
+        background-position: center 8.08%;
+    }
+    &.sIcon-upload {
+        background-position: center 9.09%;
+    }
+    &.sIcon-phone {
+        background-position: center 10.1%;
+    }
+    &.sIcon-basket {
+        background-position: center 11.11%;
+    }
+    &.sIcon-search {
+        background-position: center 12.12%;
+    }
+    &.sIcon-ok {
+        background-position: center 13.13%;
+    }
+    &.sIcon-no {
+        background-position: center 14.14%;
+    }
+}
+
+
+.sIcon-social {
+  display: inline-block;
+  background-image: url(imgs/icons-social.png);
+  background-repeat: no-repeat;
+  background-position: left bottom;
+  background-size: 200% auto;
+  width: 30px;
+  height: 30px;
+
+    //icons
+    &.sIcon-linkedin {
+        background-position: left 0%;
+    }
+    &.sIcon-facebook {
+        background-position: left 1%;
+    }
+    &.sIcon-twitter {
+        background-position: left 2.0125%;
+    }
+    &.sIcon-google {
+        background-position: left 3.025%;
+    }
+    &.sIcon-youtube {
+        background-position: left 4.05%;
+    }
+}

@@ -1,0 +1,269 @@
+<!doctype html>
+    <html lang="en">
+    <head>
+        <meta charset="utf-8">
+            <!--[if IE ]>
+                <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+            <![endif]-->
+        <title>Style guide</title>
+        <script type="text/javascript">
+            var htmlEncode = function(s){
+                var el = document.createElement("div");
+                el.innerHTML = el.textContent = s;
+                return el.innerHTML;
+            }
+        </script>
+        <link rel="stylesheet" type="text/css" href="https://cdn.rawgit.com/TheSamp/sGrid/master/css/sgrid.css" media="all">
+        <link rel="stylesheet" type="text/css" href="sicons/sicons.css" media="all">
+        <style type="text/css">
+            .sSlab{
+                border: 1px solid #dddddd;
+                padding: 1em;
+                max-width: 1000px;
+                margin: 0 auto 1em auto;
+            }
+            .sIcon,
+            .sIcon-social{
+                background-color: #333;
+                margin: 0 0.5em 0.5em 0;
+            }
+            .guide-active,
+            .example-holder{
+                background-color: #999999;
+            }
+            .example-holder{
+                position: fixed;
+                top: -15%;
+                left: 0;
+                width: 100%;
+                padding: 2em;
+                text-align: center;
+                border-bottom: 1px solid #333;
+            }
+            .item-example{
+                cursor: pointer;
+            }
+            .element-example{
+                background-color: #f2f2f2;
+            }
+            .guide-example{
+                text-align: left;
+                margin-left:auto;
+                margin-right:auto;
+                background-color: #fff;
+                line-height: 20px;
+                padding: 5px 20px 5px 20px;
+                display: inline-block;
+                margin-right:0 0.5em 0 0;
+                border: 2px solid #333;
+            }
+            .sButton{
+                margin:0 0.5em 0 0;
+            }
+            h1{
+                line-height: 2em;
+            }
+            h2{
+                line-height: 2em;
+                margin-bottom: 0.5em;
+            }
+            h3{
+                line-height: 1.8em;
+                margin-bottom: 0.5em;
+            }
+            ul,li{
+                list-style: none;
+                padding: 0;
+                margin: 0;
+            }
+            li span{
+                float:left;
+            }
+            li span:last-child{
+                padding-top:0.75em;
+                text-transform: uppercase;
+            }
+            .element-holder{
+                margin-bottom:2em;
+            }
+            code{
+                display: none;
+                color: #666;
+            }
+            em{
+                color: red;
+            }
+        </style>
+    </head>
+    <body>
+
+        <div class="sgrid sPage">
+            <div class="sSlab">
+                <h1>HTML/CSS Styleguide</h1>
+            </div>
+
+            <div class="sSlab">
+                <h2>Items</h2>
+                <p><em>Click item to see code.</em></p>
+                <div class="sGap"></div>
+                <h3>Icons</h3>
+                <p>Colours: .sIcon-black, .sIcon-gray and .sIcon-white (default)</p>
+                <div class="sGap"></div>
+                <ul class="sgrid">
+                <script type="text/javascript">
+                   var iconClss = [];
+                   cssClss = [
+                           'sIcon-up',
+                           'sIcon-down',
+                           'sIcon-prev',
+                           'sIcon-next',
+                           'sIcon-add',
+                           'sIcon-edit',
+                           'sIcon-remove',
+                           'sIcon-update',
+                           'sIcon-download',
+                           'sIcon-upload',
+                           'sIcon-phone',
+                           'sIcon-basket',
+                           'sIcon-search',
+                           'sIcon-ok',
+                           'sIcon-no'
+                       ];
+                       for(var i = 0; i < cssClss.length; i++){
+                           var dc = '&lt;span class=&quot;sIcon '+cssClss[i]+'&quot;&gt;&lt;/span&gt;';
+                           document.write('<li class="col-md-1-6"><span class="item-example sIcon '+cssClss[i]+'" data-code="'+dc+'"></span><span>'+cssClss[i].split('-')[1]+'</span></li>');
+                       }
+                </script>
+                </ul>
+
+                <div class="sDivider"></div>
+
+                <h3>Social icons</h3>
+                <script type="text/javascript">
+                    cssClss = [
+                        'sIcon-linkedin',
+                        'sIcon-facebook',
+                        'sIcon-twitter',
+                        'sIcon-google',
+                        'sIcon-youtube'
+                    ];
+                       for(var i = 0; i < cssClss.length; i++){
+                           var dc = '&lt;span class=&quot;sIcon-social '+cssClss[i]+'&quot;&gt;&lt;/span&gt;';
+                           document.write('<span class="item-example sIcon-social '+cssClss[i]+'" data-code="'+dc+'"></span>');
+                       }
+                </script>
+
+                <div class="sDivider"></div>
+
+                <!--<h3>Directional links</h3>
+                <script type="text/javascript">
+                    cssClss = [
+                       'sLink-up',
+                        'sLink-down',
+                        'sLink-prev',
+                        'sLink-next'
+                    ];
+                    var dArr = ['left','right'];
+                       for(var i = 0; i < cssClss.length; i++){
+                               for(var j = 0; j < dArr.length; j++){
+                                   var clsStr = cssClss[i]+' sLink-arrow-'+dArr[j];
+                                   var dc = '&lt;a class=&quot;sLink '+clsStr+'&quot;&gt;&lt;/a&gt;';
+                                   document.write('<a class="item-example sLink '+clsStr+' '+dArr[j]+'" data-code="'+dc+'">'+cssClss[i].replace(/s/g,'')+' (arrow '+dArr[j]+')</a>');
+                                   if(j % 2 != 0)document.write('<div class="sGap"></div>');
+                               }
+                       }
+                </script>
+
+                <div class="sDivider"></div>
+
+                <h3>Buttons</h3>
+                <script type="text/javascript">
+                     cssClss = [
+                       'sPrimary',
+                        'sSecondary',
+                        ''
+                    ];
+                    var dArr = ['','sDisabled'];
+                        for(var j = 0; j < dArr.length; j++){
+                                for(var i = 0; i < cssClss.length; i++){
+                                    var clsStr = cssClss[i]+' '+dArr[j];
+                                    var dc = '&lt;button class=&quot;sButton '+clsStr+'&quot;&gt;&lt;/button&gt;';
+                                    var iTxt = 'sButton '+cssClss[i]+'';
+                                        if(j == 1) iTxt += ' ('+dArr[j]+')';
+                                    document.write('<button class="item-example sButton '+clsStr+' '+dArr[j]+'" data-code="'+dc+'">'+iTxt.replace(/s/g,'')+'</button>');
+                                }
+                                if(j == 0) document.write('<div class="sGap"></div>');
+                        }
+
+                     document.write('<div class="sGap"></div>');
+
+                     cssClss = [
+                         'sButton-lge',
+                         'sButton-sml'
+                     ];
+                     for(var i = 0; i < cssClss.length; i++){
+                         var dc = '&lt;span class=&quot;sButton '+cssClss[i]+'&quot;&gt;&lt;/span&gt;';
+                         document.write('<span class="item-example sButton '+cssClss[i]+'" data-code="'+dc+'">'+cssClss[i].replace(/s/g,'')+'</span>');
+                     }
+                </script>
+            </div>
+
+            <div class="sSlab">
+                <h3>Elements</h3>
+                <script type="text/javascript">
+                    cssClss = [
+                        'sSlab',
+                        'sDivider',
+                        'sGap',
+                        'sClearfix',
+                        'sPadded',
+                        'sPadded-sm',
+                        'sPadded-xs',
+                        'sHide',
+                        'sFullWidth',
+                        'sHalfWidth'
+                    ];
+                        for(var i = 0; i < cssClss.length; i++){
+                            var clsStr = cssClss[i];
+                            document.write('<div class="element-holder"><h3>'+clsStr.replace(/s/g,'')+'</h3><div class="element-example '+clsStr+'"></div><code><div class="'+clsStr+'"></div></code></div>');//data-code="'+dc+'"
+                        }
+                </script>
+            </div>-->
+        </div>
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.7.1/jquery.min.js"></script>
+        <script>!window.jQuery && document.write('<script src="../js/libs/jquery-1.7.1.min.js"><\/script>')</script>
+        <script>
+        (function($){
+            $.fn.htmlElementEncode = function(){
+                    return this.each(function() {
+                        $(this).text(htmlEncode(this.innerHTML));
+                    });
+            };
+        })(jQuery);
+
+            $(document).ready(function(){
+
+                    $('code').htmlElementEncode().show();
+
+                    $(document.body).on('click', '.item-example', function(e){
+                        e.preventDefault();
+                            if($(this).hasClass('guide-active')){
+                                    $('.item-example').removeClass('guide-active');
+                                    $('.example-holder').animate({'top':'-15%'}, 250, function(){
+                                            $(this).remove();
+                                    });
+                            }else{
+                                    $('.item-example').removeClass('guide-active');
+                                    $('.example-holder').remove();
+                                var str = $(this).attr('data-code');
+                                    $(this).addClass('guide-active');
+                                    $('body').append('<div class="example-holder"><span class="guide-example"></span></div>');
+                                    $('.example-holder > .guide-example').text(str);//.before(str);
+                                    $('.example-holder').animate({'top':'0px'}, 250);
+                            }
+                        }
+                    );
+            });
+        </script>
+    </body>
+</html>
