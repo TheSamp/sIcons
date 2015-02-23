@@ -153,20 +153,57 @@
                 <div class="sDivider"></div>
 
                 <h3>Social icons</h3>
+                <ul class="sgrid">
                 <script type="text/javascript">
                     cssClss = [
                         'sIcon-linkedin',
                         'sIcon-facebook',
                         'sIcon-twitter',
                         'sIcon-google',
-                        'sIcon-youtube'
+                        'sIcon-youtube',
+                        'sIcon-pinterest',
+                        'sIcon-myspace',
+                        'sIcon-instagram',
+                        'sIcon-vimeo',
+                        'sIcon-flickr',
+                        'sIcon-tumblr',
+                        'sIcon-dribbble',
+                        'sIcon-reddit',
+                        'sIcon-digg',
+                        'sIcon-blogger',
+                        'sIcon-yelp',
+                        'sIcon-stumbleupon',
+                        'sIcon-dropbox',
+                        'sIcon-vine',
+                        'sIcon-soundcloud',
+                        'sIcon-paypal',
+                        'sIcon-yahoo',
+                        'sIcon-deviantart',
+                        'sIcon-behance',
+                        'sIcon-skype',
+                        'sIcon-drupal',
+                        'sIcon-path',
+                        'sIcon-rss',
+                        'sIcon-wordpress',
+                        'sIcon-amazon',
+                        'sIcon-evernote',
+                        'sIcon-apple',
+                        'sIcon-android',
+                        'sIcon-windows',
+                        'sIcon-chrome',
+                        'sIcon-firefox',
+                        'sIcon-safari',
+                        'sIcon-ie',
+                        'sIcon-opera'
                     ];
                        for(var i = 0; i < cssClss.length; i++){
                            var dc = '&lt;span class=&quot;sIcon-social '+cssClss[i]+'&quot;&gt;&lt;/span&gt;';
-                           document.write('<span class="item-example sIcon-social '+cssClss[i]+'" data-code="'+dc+'"></span>');
+                           //document.write('<span class="item-example sIcon-social '+cssClss[i]+'" data-code="'+dc+'"></span>');
+                           document.write('<li class="col-md-1-6"><span class="item-example sIcon-social '+cssClss[i]+'" data-code="'+dc+'"></span><span>'+cssClss[i].split('-')[1]+'</span></li>');
                        }
                 </script>
-
+                </ul>
+                
                 <div class="sDivider"></div>
 
                 <!--<h3>Directional links</h3>
