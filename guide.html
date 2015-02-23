@@ -6,6 +6,7 @@
                 <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
             <![endif]-->
         <title>Style guide</title>
+        <link href='http://fonts.googleapis.com/css?family=Share+Tech+Mono' rel='stylesheet' type='text/css'>
         <script type="text/javascript">
             var htmlEncode = function(s){
                 var el = document.createElement("div");
@@ -16,6 +17,10 @@
         <link rel="stylesheet" type="text/css" href="https://cdn.rawgit.com/TheSamp/sGrid/master/css/sgrid.css" media="all">
         <link rel="stylesheet" type="text/css" href="sicons/sicons.css" media="all">
         <style type="text/css">
+            body{
+                font-family: 'Share Tech Mono';
+                font-size: 14px;
+            }
             .sSlab{
                 border: 1px solid #dddddd;
                 padding: 1em;
@@ -103,8 +108,8 @@
             </div>
 
             <div class="sSlab">
-                <h2>Items</h2>
-                <p><em>Click item to see code.</em></p>
+                <h2>sampIcons</h2>
+                <p><em>Click an icon to see it's markup.</em></p>
                 <div class="sGap"></div>
                 <h3>Icons</h3>
                 <p>Colours: .sIcon-black, .sIcon-gray and .sIcon-white (default)</p>
@@ -127,7 +132,16 @@
                            'sIcon-basket',
                            'sIcon-search',
                            'sIcon-ok',
-                           'sIcon-no'
+                           'sIcon-no',
+                            'sIcon-play',
+                            'sIcon-pause',
+                            'sIcon-stop',
+                            'sIcon-forward',
+                            'sIcon-rewind',
+                            'sIcon-forward-next',
+                            'sIcon-rewind-prev',
+                            'sIcon-forward-end',
+                            'sIcon-rewind-start'
                        ];
                        for(var i = 0; i < cssClss.length; i++){
                            var dc = '&lt;span class=&quot;sIcon '+cssClss[i]+'&quot;&gt;&lt;/span&gt;';
