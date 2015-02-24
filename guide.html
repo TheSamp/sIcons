@@ -5,7 +5,7 @@
             <!--[if IE ]>
                 <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
             <![endif]-->
-        <title>Style guide</title>
+        <title>SampIcons</title>
         <link href='http://fonts.googleapis.com/css?family=Share+Tech+Mono' rel='stylesheet' type='text/css'>
         <script type="text/javascript">
             var htmlEncode = function(s){
@@ -112,7 +112,7 @@
                 <p><em>Click an icon to see it's markup.</em></p>
                 <div class="sGap"></div>
                 <h3>Icons</h3>
-                <p>Colours: .sIcon-black, .sIcon-gray and .sIcon-white (default)</p>
+                <p>Colours: <button class="icon-bg-changer">sIcon-black</button>, <button class="icon-bg-changer">sIcon-gray</button> and <button class="icon-bg-changer">sIcon-white</button> (default)</p>
                 <div class="sGap"></div>
                 <ul class="sgrid">
                 <script type="text/javascript">
@@ -314,6 +314,33 @@
                             }
                         }
                     );
+
+                var rArr = ['sIcon-white','sIcon-black','sIcon-gray'];
+
+                   $(document.body).on('click', '.icon-bg-changer', function(e){
+                        var tbg = $(this).text();
+
+                            for(var r = 0;r < rArr.length; r++){
+
+                                    $('.sIcon').removeClass(rArr[r]);
+
+                                    $('.sIcon').each(function(i, item){
+                                        var dcode = $(item).attr('data-code');
+                                        var ncode = dcode.replace(/ rArr[r]/gi,' ');
+                                    });
+                            }
+
+                            if(tbg !== rArr[0]) $('.sIcon').addClass(tbg);
+                             /*
+                            $('.sIcon').each(function(i, item){
+                                var kyrpa = $(item).attr('data-code');
+                                //console.log(kyrpa.replace('"></span>', ' '+tbg+'"></span>'));
+                                console.log('kyrpa:'+kyrpa);
+                                var pillu = kyrpa.replace('"></span>', ' '+tbg+'"></span>');
+                                console.log('pillu:'+pillu);
+                                    $(item).attr('data-code', pillu);//);
+                            });*/
+                    });
             });
         </script>
     </body>
