@@ -6,12 +6,6 @@
   background-size: 100% auto;
   background-repeat: no-repeat;
   background-position: center bottom; }
-  .sIcon.sIcon-left {
-    float: left; }
-  .sIcon.sIcon-right {
-    float: right; }
-  .sIcon.sIcon-hide {
-    display: none; }
   .sIcon.sIcon-black {
     background-image: url(imgs/icons-black.png); }
   .sIcon.sIcon-gray {
@@ -65,7 +59,7 @@
   .sIcon.sIcon-rewind-start {
     background-position: center 23.23%; }
   .sIcon.sIcon-settings {
-    background-position: center 24.23%; }
+    background-position: center 24.24%; }
 
 .sIcon-social {
   display: inline-block;
@@ -74,111 +68,7 @@
   background-position: left bottom;
   background-size: 200% auto;
   width: 30px;
-  height: 30px;
-  /*
-      &.sIcon-pinterest{
-          background-position: left 5.05%;
-      }
-      &.sIcon-myspace{
-          background-position: left 5.05%;
-      }
-      &.sIcon-instagram{
-          background-position: left 5.05%;
-      }
-      &.sIcon-vimeo{
-          background-position: left 5.05%;
-      }
-      &.sIcon-flickr{
-          background-position: left 5.05%;
-      }
-      &.sIcon-tumblr{
-          background-position: left 5.05%;
-      }
-      &.sIcon-dribbble{
-          background-position: left 5.05%;
-      }
-      &.sIcon-reddit{
-          background-position: left 5.05%;
-      }
-      &.sIcon-digg{
-          background-position: left 5.05%;
-      }
-      &.sIcon-blogger{
-          background-position: left 5.05%;
-      }
-      &.sIcon-yelp{
-          background-position: left 5.05%;
-      }
-      &.sIcon-stumbleupon{
-          background-position: left 5.05%;
-      }
-      &.sIcon-dropbox{
-          background-position: left 5.05%;
-      }
-      &.sIcon-vine{
-          background-position: left 5.05%;
-      }
-      &.sIcon-soundcloud{
-          background-position: left 5.05%;
-      }
-      &.sIcon-paypal{
-          background-position: left 5.05%;
-      }
-      &.sIcon-yahoo{
-          background-position: left 5.05%;
-      }
-      &.sIcon-deviantart{
-          background-position: left 5.05%;
-      }
-      &.sIcon-behance{
-          background-position: left 5.05%;
-      }
-      &.sIcon-skype{
-          background-position: left 5.05%;
-      }
-      &.sIcon-drupal{
-          background-position: left 5.05%;
-      }
-      &.sIcon-path{
-          background-position: left 5.05%;
-      }
-      &.sIcon-rss{
-          background-position: left 5.05%;
-      }
-      &.sIcon-wordpress{
-          background-position: left 5.05%;
-      }
-      &.sIcon-amazon{
-          background-position: left 5.05%;
-      }
-      &.sIcon-evernote{
-          background-position: left 5.05%;
-      }
-      &.sIcon-apple{
-          background-position: left 5.05%;
-      }
-      &.sIcon-android{
-          background-position: left 5.05%;
-      }
-      &.sIcon-windows{
-          background-position: left 5.05%;
-      }
-      &.sIcon-chrome{
-          background-position: left 5.05%;
-      }
-      &.sIcon-firefox{
-          background-position: left 5.05%;
-      }
-      &.sIcon-safari{
-          background-position: left 5.05%;
-      }
-      &.sIcon-ie{
-          background-position: left 5.05%;
-      }
-      &.sIcon-opera{
-          background-position: left 5.05%;
-      }
-      */ }
+  height: 30px; }
   .sIcon-social.sIcon-linkedin {
     background-position: left 0%; }
   .sIcon-social.sIcon-facebook {
@@ -257,3 +147,16 @@
     background-position: left 37.37%; }
   .sIcon-social.sIcon-opera {
     background-position: left 38.38%; }
+
+.sIcon.sIcon-left,
+.sIcon-social.sIcon-left {
+  float: left; }
+.sIcon.sIcon-right,
+.sIcon-social.sIcon-right {
+  float: right; }
+.sIcon.sIcon-hide,
+.sIcon-social.sIcon-hide {
+  display: none; }
+.sIcon.sIcon-show,
+.sIcon-social.sIcon-show {
+  display: inline-block; }
