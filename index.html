@@ -27,11 +27,19 @@
                 max-width: 1000px;
                 margin: 0 auto 1em auto;
             }
-            .sIcon,
-            .sIcon-social{
+            ul.sgrid .sIcon,
+            ul.sgrid .sIcon-social{
+                background-color: #333;
                 margin: 0 0.5em 0.5em 0;
             }
-            .guide-active,
+            button{
+                padding: 0 0.5em 0 0;
+                margin: 0;
+                line-height:30px;
+                cursor:pointer;
+            }
+            ul.sgrid .sIcon.guide-active,
+            ul.sgrid .sIcon-social.guide-active,
             .example-holder{
                 background-color: #999999;
             }
@@ -111,8 +119,8 @@
                 <h3><em>Click an icon to see it's markup.</em></h3>
                 <div class="sGap"></div>
                 <h3>Icons</h3>
-                <p>Colours: <button class="icon-bg-changer">sIcon-black</button>, <button class="icon-bg-changer">sIcon-gray</button> and <button class="icon-bg-changer">sIcon-white</button> (default)<br>Control position with .sIcon-left or .sIcon-right</p>
-                <p>Include this file in your header:<br> &lt;link type="text/css" rel="stylesheet" media="all" href="https://cdn.rawgit.com/TheSamp/sampIcons/master/sicons/sicons.css"&gt;<br> and presto!</p>
+                <p>Include this file in your header:<br> &lt;link type="text/css" rel="stylesheet" media="all" href="https://cdn.rawgit.com/TheSamp/sampIcons/master/sicons/sicons.css"&gt;<br> and presto! - <em>Except DON'T FORGET TO ADD background-color to .sIcon class</em>. Control position with adding .sIcon-left or .sIcon-right to .sIcon-element.</p>
+                <p>Icon colours: <button class="icon-bg-changer"><span class="sIcon sIcon-update sIcon-gray sIcon-left"></span>sIcon-black</button> <button class="icon-bg-changer"><span class="sIcon sIcon-update sIcon-gray sIcon-left"></span>sIcon-gray</button> or <button class="icon-bg-changer"><span class="sIcon sIcon-update sIcon-gray sIcon-left"></span>sIcon-white (default)</button> - Click to see in practise.</p>
                 <div class="sGap"></div>
                 <ul class="sgrid">
                 <script type="text/javascript">
@@ -323,12 +331,12 @@
                         var tbg = $(this).text();
 
                             for(var r = 0;r < rArr.length; r++){
-                                    $('.sIcon').removeClass(rArr[r]);
+                                    $('ul.sgrid .sIcon').removeClass(rArr[r]);
                             }
 
                             if(tbg !== rArr[0]) $('.sIcon').addClass(tbg);
 
-                           $('.sIcon').each(function(i, item){
+                           $('ul.sgrid .sIcon').each(function(i, item){
                                var dcode = htmlEncode('<span class="'+$(item).attr('class')+'"></span>').replace('item-example ', '').replace('guide-active ', '');
                                $(item).attr('data-code', dcode);
                            });

@@ -150,18 +150,15 @@
   .sIcon-social.sIcon-github {
     background-position: left 39.39%; }
 
-.sIcon,
-.sIcon-social {
-  background-color: #333; }
-  .sIcon.sIcon-left,
-  .sIcon-social.sIcon-left {
-    float: left; }
-  .sIcon.sIcon-right,
-  .sIcon-social.sIcon-right {
-    float: right; }
-  .sIcon.sIcon-hide,
-  .sIcon-social.sIcon-hide {
-    display: none; }
-  .sIcon.sIcon-show,
-  .sIcon-social.sIcon-show {
-    display: inline-block; }
+.sIcon.sIcon-left,
+.sIcon-social.sIcon-left {
+  float: left; }
+.sIcon.sIcon-right,
+.sIcon-social.sIcon-right {
+  float: right; }
+.sIcon.sIcon-hide,
+.sIcon-social.sIcon-hide {
+  display: none; }
+.sIcon.sIcon-show,
+.sIcon-social.sIcon-show {
+  display: inline-block; }
