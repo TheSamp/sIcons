@@ -310,7 +310,7 @@
                                 var str = $(this).attr('data-code');
                                     $(this).addClass('guide-active');
                                     $('body').append('<div class="example-holder"><span class="guide-example"></span></div>');
-                                    $('.example-holder > .guide-example').text(str);//.before(str);
+                                    $('.example-holder > .guide-example').text(str);
                                     $('.example-holder').animate({'top':'0px'}, 250);
                             }
                         }
@@ -322,25 +322,15 @@
                         var tbg = $(this).text();
 
                             for(var r = 0;r < rArr.length; r++){
-
                                     $('.sIcon').removeClass(rArr[r]);
-
-                                    $('.sIcon').each(function(i, item){
-                                        var dcode = $(item).attr('data-code');
-                                        var ncode = dcode.replace(/ rArr[r]/gi,' ');
-                                    });
                             }
 
                             if(tbg !== rArr[0]) $('.sIcon').addClass(tbg);
-                             /*
-                            $('.sIcon').each(function(i, item){
-                                var kyrpa = $(item).attr('data-code');
-                                //console.log(kyrpa.replace('"></span>', ' '+tbg+'"></span>'));
-                                console.log('kyrpa:'+kyrpa);
-                                var pillu = kyrpa.replace('"></span>', ' '+tbg+'"></span>');
-                                console.log('pillu:'+pillu);
-                                    $(item).attr('data-code', pillu);//);
-                            });*/
+
+                           $('.sIcon').each(function(i, item){
+                               var dcode = htmlEncode('<span class="'+$(item).attr('class')+'"></span>').replace('item-example ', '').replace('guide-active ', '');
+                               $(item).attr('data-code', dcode);
+                           });
                     });
             });
         </script>
