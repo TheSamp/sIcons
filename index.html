@@ -120,12 +120,12 @@
                 <div class="sGap"></div>
                 <h3>Icons</h3>
                 <p>Include this file in your header:<br> &lt;link type="text/css" rel="stylesheet" media="all" href="https://cdn.rawgit.com/TheSamp/sampIcons/master/sicons/sicons.css"&gt;<br> and presto! - <em>Except DON'T FORGET TO ADD background-color to .sIcon class</em>. Control position with adding .sIcon-left or .sIcon-right to .sIcon-element.</p>
-                <p>Icon colours: <button class="icon-bg-changer"><span class="sIcon sIcon-update sIcon-gray sIcon-left"></span>sIcon-black</button> <button class="icon-bg-changer"><span class="sIcon sIcon-update sIcon-gray sIcon-left"></span>sIcon-gray</button> or <button class="icon-bg-changer"><span class="sIcon sIcon-update sIcon-gray sIcon-left"></span>sIcon-white (default)</button> - Click to see in practise.</p>
+                <p>Icon colours: <button class="icon-bg-changer"><span class="sIcon sIcon-update sIcon-gray sIcon-left"></span>sIcon-black</button> <button class="icon-bg-changer"><span class="sIcon sIcon-update sIcon-gray sIcon-left"></span>sIcon-gray</button> or <button class="icon-bg-changer"><span class="sIcon sIcon-update sIcon-gray sIcon-left"></span>sIcon-white</button> (default) - Click to see in practise.</p>
                 <div class="sGap"></div>
                 <ul class="sgrid">
                 <script type="text/javascript">
-                   var iconClss = [];
-                   cssClss = [
+                    var iconClss = [];
+                    cssClss = [
                         'sIcon-up',
                         'sIcon-down',
                         'sIcon-prev',
@@ -150,15 +150,96 @@
                         'sIcon-rewind-prev',
                         'sIcon-forward-end',
                         'sIcon-rewind-start',
-                        'sIcon-settings'
-                       ];
-                       for(var i = 0; i < cssClss.length; i++){
-                           var dc = '&lt;span class=&quot;sIcon '+cssClss[i]+'&quot;&gt;&lt;/span&gt;';
-                           document.write('<li class="col-md-1-6"><span class="item-example sIcon '+cssClss[i]+'" data-code="'+dc+'"></span><span>'+cssClss[i].split('-')[1]+'</span></li>');
-                       }
+                        'sIcon-loop',
+                        'sIcon-loop-no',
+                        'sIcon-sound',
+                        'sIcon-sound-off',
+                        'sIcon-settings',
+                        'sIcon-info',
+                        'sIcon-question',
+                        'sIcon-notice',
+                        'sIcon-warning',
+                        'sIcon-error',
+                        'sIcon-checked',
+                        'sIcon-unchecked',
+                        'sIcon-selected',
+                        'sIcon-deselected',
+                        'sIcon-resize-sm',
+                        'sIcon-resize-md',
+                        'sIcon-resize-lg',
+                        'sIcon-locked',
+                        'sIcon-unlocked',
+                        'sIcon-save',
+                        'sIcon-print',
+                        'sIcon-document',
+                        'sIcon-documents',
+                        'sIcon-pdf',
+                        'sIcon-photo',
+                        'sIcon-photos',
+                        'sIcon-folder',
+                        'sIcon-folder-open',
+                        'sIcon-home',
+                        'sIcon-person',
+                        'sIcon-people',
+                        'sIcon-group',
+                        'sIcon-profile',
+                        'sIcon-profiles',
+                        'sIcon-comment',
+                        'sIcon-comments',
+                        'sIcon-comment-write',
+                        'sIcon-pin-map',
+                        'sIcon-pin',
+                        'sIcon-globe',
+                        'sIcon-zoom-in',
+                        'sIcon-zoom-out',
+                        'sIcon-email',
+                        'sIcon-email-open',
+                        'sIcon-email-read',
+                        'sIcon-attachment',
+                        'sIcon-phone',
+                        'sIcon-ereader',
+                        'sIcon-tablet',
+                        'sIcon-desktop',
+                        'sIcon-grid',
+                        'sIcon-list',
+                        'sIcon-items',
+                        'sIcon-share',
+                        'sIcon-open',
+                        'sIcon-quote-start',
+                        'sIcon-quote-end',
+                        'sIcon-camera',
+                        'sIcon-videocamera',
+                        'sIcon-day',
+                        'sIcon-month',
+                        'sIcon-year',
+                        'sIcon-time',
+                        'sIcon-star',
+                        'sIcon-star-half',
+                        'sIcon-star-full',
+                        'sIcon-move',
+                        'sIcon-move-side',
+                        'sIcon-move-updown',
+                        'sIcon-trash',
+                        'sIcon-trash-full',
+                        'sIcon-tag',
+                        'sIcon-cloud',
+                        'sIcon-cloud-download',
+                        'sIcon-cloud-upload',
+                        'sIcon-menu'
+                    ];
+                    var cssStr = '';
+                        for(var i = 0; i < cssClss.length; i++){
+                            cssStr += '&.'+cssClss[i]+' {<br>';
+                            cssStr += '\tbackground-position: center '+i+'.'+i+'%;<br>'
+                            cssStr += '}<br>';
+
+                            var dc = '&lt;span class=&quot;sIcon '+cssClss[i]+'&quot;&gt;&lt;/span&gt;';
+                            document.write('<li class="col-md-1-6"><span class="item-example sIcon '+cssClss[i]+'" data-code="'+dc+'"></span><span>'+cssClss[i].slice(6)+'</span></li>');
+                        }
                 </script>
                 </ul>
 
+                <div><script> // document.write('<pre>'+cssStr+'</pre>');</script></div>
                 <div class="sDivider"></div>
 
                 <h3>Social icons</h3>

@@ -58,8 +58,158 @@
     background-position: center 22.22%; }
   .sIcon.sIcon-rewind-start {
     background-position: center 23.23%; }
-  .sIcon.sIcon-settings {
+  .sIcon.sIcon-loop {
     background-position: center 24.24%; }
+  .sIcon.sIcon-loop-no {
+    background-position: center 25.25%; }
+  .sIcon.sIcon-sound {
+    background-position: center 26.26%; }
+  .sIcon.sIcon-sound-off {
+    background-position: center 27.27%; }
+  .sIcon.sIcon-settings {
+    background-position: center 28.28%; }
+  .sIcon.sIcon-info {
+    background-position: center 29.29%; }
+  .sIcon.sIcon-question {
+    background-position: center 30.30%; }
+  .sIcon.sIcon-notice {
+    background-position: center 31.31%; }
+  .sIcon.sIcon-warning {
+    background-position: center 32.32%; }
+  .sIcon.sIcon-error {
+    background-position: center 33.33%; }
+  .sIcon.sIcon-checked {
+    background-position: center 34.34%; }
+  .sIcon.sIcon-unchecked {
+    background-position: center 35.35%; }
+  .sIcon.sIcon-selected {
+    background-position: center 36.36%; }
+  .sIcon.sIcon-deselected {
+    background-position: center 37.37%; }
+  .sIcon.sIcon-resize-sm {
+    background-position: center 38.38%; }
+  .sIcon.sIcon-resize-md {
+    background-position: center 39.39%; }
+  .sIcon.sIcon-resize-lg {
+    background-position: center 40.40%; }
+  .sIcon.sIcon-locked {
+    background-position: center 41.41%; }
+  .sIcon.sIcon-unlocked {
+    background-position: center 42.42%; }
+  .sIcon.sIcon-save {
+    background-position: center 43.43%; }
+  .sIcon.sIcon-print {
+    background-position: center 44.44%; }
+  .sIcon.sIcon-document {
+    background-position: center 45.45%; }
+  .sIcon.sIcon-documents {
+    background-position: center 46.46%; }
+  .sIcon.sIcon-pdf {
+    background-position: center 47.47%; }
+  .sIcon.sIcon-photo {
+    background-position: center 48.48%; }
+  .sIcon.sIcon-photos {
+    background-position: center 49.49%; }
+  .sIcon.sIcon-folder {
+    background-position: center 50.50%; }
+  .sIcon.sIcon-folder-open {
+    background-position: center 51.51%; }
+  .sIcon.sIcon-home {
+    background-position: center 52.52%; }
+  .sIcon.sIcon-person {
+    background-position: center 53.53%; }
+  .sIcon.sIcon-people {
+    background-position: center 54.54%; }
+  .sIcon.sIcon-group {
+    background-position: center 55.55%; }
+  .sIcon.sIcon-profile {
+    background-position: center 56.56%; }
+  .sIcon.sIcon-profiles {
+    background-position: center 57.57%; }
+  .sIcon.sIcon-comment {
+    background-position: center 58.58%; }
+  .sIcon.sIcon-comments {
+    background-position: center 59.59%; }
+  .sIcon.sIcon-comment-write {
+    background-position: center 60.60%; }
+  .sIcon.sIcon-pin-map {
+    background-position: center 61.61%; }
+  .sIcon.sIcon-pin {
+    background-position: center 62.62%; }
+  .sIcon.sIcon-globe {
+    background-position: center 63.63%; }
+  .sIcon.sIcon-zoom-in {
+    background-position: center 64.64%; }
+  .sIcon.sIcon-zoom-out {
+    background-position: center 65.65%; }
+  .sIcon.sIcon-email {
+    background-position: center 66.66%; }
+  .sIcon.sIcon-email-open {
+    background-position: center 67.67%; }
+  .sIcon.sIcon-email-read {
+    background-position: center 68.68%; }
+  .sIcon.sIcon-attachment {
+    background-position: center 69.69%; }
+  .sIcon.sIcon-phone {
+    background-position: center 70.70%; }
+  .sIcon.sIcon-ereader {
+    background-position: center 71.71%; }
+  .sIcon.sIcon-tablet {
+    background-position: center 72.72%; }
+  .sIcon.sIcon-desktop {
+    background-position: center 73.73%; }
+  .sIcon.sIcon-grid {
+    background-position: center 74.74%; }
+  .sIcon.sIcon-list {
+    background-position: center 75.75%; }
+  .sIcon.sIcon-items {
+    background-position: center 76.76%; }
+  .sIcon.sIcon-share {
+    background-position: center 77.77%; }
+  .sIcon.sIcon-open {
+    background-position: center 78.78%; }
+  .sIcon.sIcon-quote-start {
+    background-position: center 79.79%; }
+  .sIcon.sIcon-quote-end {
+    background-position: center 80.80%; }
+  .sIcon.sIcon-camera {
+    background-position: center 81.81%; }
+  .sIcon.sIcon-videocamera {
+    background-position: center 82.82%; }
+  .sIcon.sIcon-day {
+    background-position: center 83.83%; }
+  .sIcon.sIcon-month {
+    background-position: center 84.84%; }
+  .sIcon.sIcon-year {
+    background-position: center 85.85%; }
+  .sIcon.sIcon-time {
+    background-position: center 86.86%; }
+  .sIcon.sIcon-star {
+    background-position: center 87.87%; }
+  .sIcon.sIcon-star-half {
+    background-position: center 88.88%; }
+  .sIcon.sIcon-star-full {
+    background-position: center 89.89%; }
+  .sIcon.sIcon-move {
+    background-position: center 90.90%; }
+  .sIcon.sIcon-move-side {
+    background-position: center 91.91%; }
+  .sIcon.sIcon-move-updown {
+    background-position: center 92.92%; }
+  .sIcon.sIcon-trash {
+    background-position: center 93.93%; }
+  .sIcon.sIcon-trash-full {
+    background-position: center 94.94%; }
+  .sIcon.sIcon-tag {
+    background-position: center 95.95%; }
+  .sIcon.sIcon-cloud {
+    background-position: center 96.96%; }
+  .sIcon.sIcon-cloud-download {
+    background-position: center 97.97%; }
+  .sIcon.sIcon-cloud-upload {
+    background-position: center 98.98%; }
+  .sIcon.sIcon-menu {
+    background-position: center 99.99%; }
 
 .sIcon-social {
   display: inline-block;
