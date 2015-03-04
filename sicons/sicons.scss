@@ -225,7 +225,7 @@
     &.sIcon-attachment {
         background-position: center 69.69%;
     }
-    &.sIcon-phone {
+    &.sIcon-smartphone {
         background-position: center 70.70%;
     }
     &.sIcon-ereader {
@@ -317,16 +317,21 @@
     }
 }
 
-
-
 .sIcon-social {
   display: inline-block;
-  background-image: url(imgs/icons-social.png);
+  background-image: url(imgs/icons-social-white.png);
   background-repeat: no-repeat;
   background-position: left bottom;
   background-size: 200% auto;
   width: 30px;
   height: 30px;
+
+    &.sIcon-black {
+      background-image: url(imgs/icons-social-black.png);
+    }
+    &.sIcon-gray {
+      background-image: url(imgs/icons-social-gray.png);
+    }
 
     //icons
     &.sIcon-linkedin {
@@ -454,6 +459,7 @@
 
 .sIcon,
 .sIcon-social{
+
     &.sIcon-left {
       float: left;
     }
@@ -465,5 +471,17 @@
     }
     &.sIcon-show {
       display: inline-block;
+    }
+
+    &.sIcon-round{
+      -webkit-border-radius: 50%;
+      -moz-border-radius: 50%;
+      border-radius:  50%;
+    }
+
+    &.sIcon-rounded{
+      -webkit-border-radius: 10%;
+      -moz-border-radius: 10%;
+      border-radius:  10%;
     }
 }

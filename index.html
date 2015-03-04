@@ -24,7 +24,7 @@
             .sSlab{
                 border: 1px solid #dddddd;
                 padding: 1em;
-                max-width: 1000px;
+                max-width: 980px;
                 margin: 0 auto 1em auto;
             }
             ul.sgrid .sIcon,
@@ -41,10 +41,11 @@
             ul.sgrid .sIcon.guide-active,
             ul.sgrid .sIcon-social.guide-active,
             .example-holder{
-                background-color: #999999;
+                background-color: #999999 !important;
             }
-            button .sIcon.sIcon-question{
-                background-color: #333;
+            button .sIcon.sIcon-question,
+            .icon-shape-changer > .sIcon{
+                background-color: #000;
                 margin-right:0.25em;
             }
             .example-holder{
@@ -115,19 +116,29 @@
 
         <div class="sgrid sPage">
             <div class="sSlab">
-                <h1>HTML/CSS Styleguide</h1>
-            </div>
-
-            <div class="sSlab">
-                <h2>sampIcons</h2>
-                <h3><em>Click an icon to see it's markup.</em></h3>
-                <div class="sGap"></div>
-                <h3>Icons</h3>
-                <p>Include this file in your header:<br> &lt;link type="text/css" rel="stylesheet" media="all" href="https://cdn.rawgit.com/TheSamp/sampIcons/master/sicons/sicons.css"&gt;<br> and presto! - <em>Except DON'T FORGET TO ADD background-color to .sIcon class</em>. Control position with adding .sIcon-left or .sIcon-right to .sIcon-element.</p>
-                <h4>Icon colours</h4>
-                <p><button class="icon-color-changer"><span class="sIcon sIcon-update sIcon-gray sIcon-left"></span>sIcon-black</button> <button class="icon-color-changer"><span class="sIcon sIcon-update sIcon-gray sIcon-left"></span>sIcon-gray</button> or <button class="icon-color-changer"><span class="sIcon sIcon-update sIcon-gray sIcon-left"></span>sIcon-white</button> (default) - Click to see in practise.</p>
-                <p><button class="icon-bg-changer"><span class="sIcon sIcon-question sIcon-left"></span>Random background colour</button> <button class="icon-bg-reset"><span class="sIcon sIcon-remove sIcon-gray sIcon-left"></span>Reset colour</button></p>
-                <div class="sGap"></div>
+                <h1>sampIcons</h1>
+                <h2><em>Click an icon to see it's markup.</em></h2>
+                <p>Include this file in your header:<br> <b>&lt;link type="text/css" rel="stylesheet" media="all" href="https://cdn.rawgit.com/TheSamp/sampIcons/master/sicons/sicons.css"&gt;</b><br> and presto! - <em>Except DON'T FORGET TO ADD background-color to .sIcon class</em>. Control position with adding .sIcon-left or .sIcon-right to .sIcon-element.</p>
+                <div class="sgrid">
+                    <div class="col-md-1-2 col-sm-1-1">
+                        <h3>Icon colours</h3>
+                        <p><button class="icon-color-changer"><span class="sIcon sIcon-update sIcon-black sIcon-left"></span>sIcon-black</button> <button class="icon-color-changer"><span class="sIcon sIcon-update sIcon-gray sIcon-left"></span>sIcon-gray</button> or <button class="icon-color-changer"><span class="sIcon sIcon-remove sIcon-left"></span>Default</button><br>Click button to change.</p>
+                    </div>
+                    <div class="col-md-1-2 col-sm-1-1">
+                        <h3>Icon shapes</h3>
+                        <p><button class="icon-shape-changer"><span class="sIcon sIcon-update sIcon-round sIcon-left"></span>sIcon-round</button> <button class="icon-shape-changer"><span class="sIcon sIcon-update sIcon-rounded sIcon-left"></span>sIcon-rounded</button> or <button class="icon-shape-changer"><span class="sIcon sIcon-remove sIcon-left"></span>Default</button><br>Click button to change.</p>
+                    </div>
+                </div>
+                <h3>Testing</h3>
+                <div class="sgrid">
+                    <div class="col-md-1-2 col-sm-1-1">
+                        <p>Temporary styles for demo purposes only. Click button to set.</p>
+                    </div>
+                    <div class="col-md-1-2 col-sm-1-1">
+                        <p><button class="icon-bg-changer"><span class="sIcon sIcon-question sIcon-left"></span>Random background colour</button> <button class="icon-size-changer"><span class="sIcon sIcon-resize-sm sIcon-black sIcon-left"></span>Change size</button> or <button class="icon-style-reset"><span class="sIcon sIcon-trash sIcon-black sIcon-left"></span>Reset</button></p>
+                    </div>
+                </div>
+                <h2>Icons</h2>
                 <ul class="sgrid">
                 <script type="text/javascript">
                     var iconClss = [];
@@ -202,7 +213,7 @@
                         'sIcon-email-open',
                         'sIcon-email-read',
                         'sIcon-attachment',
-                        'sIcon-phone',
+                        'sIcon-smartphone',
                         'sIcon-ereader',
                         'sIcon-tablet',
                         'sIcon-desktop',
@@ -238,15 +249,13 @@
                             /*cssStr += '&.'+cssClss[i]+' {<br>';
                             cssStr += '\tbackground-position: center '+i+'.'+i+'%;<br>'
                             cssStr += '}<br>';*/
-
                             var dc = '&lt;span class=&quot;sIcon '+cssClss[i]+'&quot;&gt;&lt;/span&gt;';
-                            document.write('<li class="col-md-1-6"><span class="item-example sIcon '+cssClss[i]+'" data-code="'+dc+'"></span><span>'+cssClss[i].slice(6)+'</span></li>');
+                            document.write('<li class="col-md-1-4 col-sm-1-2 col-xs-1-1"><span class="item-example sIcon '+cssClss[i]+'" data-code="'+dc+'"></span><span>'+cssClss[i].slice(6)+'</span></li>');
                         }
                 </script>
                 </ul>
-                <div class="sDivider"></div>
 
-                <h3>Social icons</h3>
+                <h2>Social icons</h2>
                 <ul class="sgrid">
                 <script type="text/javascript">
                     cssClss = [
@@ -293,13 +302,10 @@
                     ];
                        for(var i = 0; i < cssClss.length; i++){
                            var dc = '&lt;span class=&quot;sIcon-social '+cssClss[i]+'&quot;&gt;&lt;/span&gt;';
-                           //document.write('<span class="item-example sIcon-social '+cssClss[i]+'" data-code="'+dc+'"></span>');
-                           document.write('<li class="col-md-1-6"><span class="item-example sIcon-social '+cssClss[i]+'" data-code="'+dc+'"></span><span>'+cssClss[i].split('-')[1]+'</span></li>');
+                           document.write('<li class="col-md-1-4 col-sm-1-2 col-xs-1-1"><span class="item-example sIcon-social '+cssClss[i]+'" data-code="'+dc+'"></span><span>'+cssClss[i].split('-')[1]+'</span></li>');
                        }
                 </script>
                 </ul>
-                
-                <div class="sDivider"></div>
         </div>
         <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.7.1/jquery.min.js"></script>
         <script>!window.jQuery && document.write('<script src="../js/libs/jquery-1.7.1.min.js"><\/script>')</script>
@@ -311,6 +317,20 @@
                     });
             };
         })(jQuery);
+
+        var removeClasses = function(rArr){
+            for(var r = 0;r < rArr.length; r++){
+                $('ul.sgrid .sIcon, ul.sgrid .sIcon-social').removeClass(rArr[r]);
+            }
+        }
+
+        var removeExample = function(){
+                $('.item-example').removeClass('guide-active');
+                $('.example-holder').animate({'top':'-15%'}, 250, function(){
+                    $(this).remove();
+                });
+        }
+
 
             $(document).ready(function(){
 
@@ -335,30 +355,50 @@
                         }
                     );
 
-                var rArr = ['sIcon-white','sIcon-black','sIcon-gray'];
-
                    $(document.body).on('click', '.icon-color-changer', function(e){
+                        removeExample();
+                        removeClasses(['sIcon-white','sIcon-gray','sIcon-black']);
                         var tbg = $(this).text();
 
-                            for(var r = 0;r < rArr.length; r++){
-                                    $('ul.sgrid .sIcon').removeClass(rArr[r]);
-                            }
+                           if(tbg !== 'Default') $('ul.sgrid .sIcon, ul.sgrid .sIcon-social').addClass(tbg);
 
-                            if(tbg !== rArr[0]) $('.sIcon').addClass(tbg);
-
-                           $('ul.sgrid .sIcon').each(function(i, item){
-                               var dcode = htmlEncode('<span class="'+$(item).attr('class')+'"></span>').replace('item-example ', '').replace('guide-active ', '');
+                           $('ul.sgrid .sIcon, ul.sgrid .sIcon-social').each(function(i, item){
+                               var dcode = htmlEncode('<span class="'+$(item).attr('class')+'"></span>').replace('item-example', '').replace('guide-active', '').replace('  ', ' ').replace('" ', '"').replace(' "', '"');
                                $(item).attr('data-code', dcode);
                            });
                     });
 
-                    $(document.body).on('click', '.icon-bg-changer', function(e){
-                        $('ul.sgrid .sIcon').attr('style', 'background-color:#'+Math.floor(Math.random()*16777215).toString(16));
+                    $(document.body).on('click', '.icon-shape-changer', function(e){
+                        removeExample();
+                        removeClasses(['sIcon-square','sIcon-rounded','sIcon-round']);
+                        var tbg2 = $(this).text();
+
+                            if(tbg2 !== 'Default') $('ul.sgrid .sIcon, ul.sgrid .sIcon-social').addClass(tbg2);
+
+                            $('ul.sgrid .sIcon, ul.sgrid .sIcon-social').each(function(i, item){
+                                var dcode = htmlEncode('<span class="'+$(item).attr('class')+'"></span>').replace('item-example', '').replace('guide-active', '').replace('  ', ' ').replace('" ', '"').replace(' "', '"');
+                                $(item).attr('data-code', dcode);
+                            });
                     });
 
-                    $(document.body).on('click', '.icon-bg-reset', function(e){
-                        $('ul.sgrid .sIcon').removeAttr('style');
+                    $(document.body).on('click', '.icon-bg-changer', function(e){
+                        $('ul.sgrid .sIcon, ul.sgrid .sIcon-social').css({'background-color':'#'+Math.floor(Math.random()*16777215).toString(16)});
                     });
+
+                var ctr = 10, nD = 30;
+
+                    $(document.body).on('click', '.icon-size-changer', function(e){
+                        nD += ctr;
+                            if(nD > 50) nD = 30;
+                            $('ul.sgrid .sIcon, ul.sgrid .sIcon-social').css({'width':nD+'px','height':nD+'px'});
+                    });
+
+
+                    $(document.body).on('click', '.icon-style-reset', function(e){
+                        $('ul.sgrid .sIcon, ul.sgrid .sIcon-social').removeAttr('style');
+                        nD = 30;
+                    });
+
             });
         </script>
     </body>
