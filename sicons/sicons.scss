@@ -2,16 +2,16 @@
   display: inline-block;
   width: 30px;
   height: 30px;
-  background-image: url(imgs/icons-white.png);
+  background-image: url(imgs/sicons-white.png);
   background-size: 100% auto;
   background-repeat: no-repeat;
   background-position: center bottom;
 
     &.sIcon-black {
-        background-image: url(imgs/icons-black.png);
+        background-image: url(simgs/icons-black.png);
     }
     &.sIcon-gray {
-        background-image: url(imgs/icons-gray.png);
+        background-image: url(simgs/icons-gray.png);
     }
 
     //icons
@@ -319,7 +319,7 @@
 
 .sIcon-social {
   display: inline-block;
-  background-image: url(imgs/icons-social-white.png);
+  background-image: url(imgs/sicons-social-white.png);
   background-repeat: no-repeat;
   background-position: left bottom;
   background-size: 200% auto;
@@ -327,10 +327,10 @@
   height: 30px;
 
     &.sIcon-black {
-      background-image: url(imgs/icons-social-black.png);
+      background-image: url(imgs/sicons-social-black.png);
     }
     &.sIcon-gray {
-      background-image: url(imgs/icons-social-gray.png);
+      background-image: url(imgs/sicons-social-gray.png);
     }
 
     //icons
