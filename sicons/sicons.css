@@ -7,9 +7,9 @@
   background-repeat: no-repeat;
   background-position: center bottom; }
   .sIcon.sIcon-black {
-    background-image: url(simgs/icons-black.png); }
+    background-image: url(imgs/sicons-black.png); }
   .sIcon.sIcon-gray {
-    background-image: url(simgs/icons-gray.png); }
+    background-image: url(imgs/sicons-gray.png); }
   .sIcon.sIcon-up {
     background-position: center 0%; }
   .sIcon.sIcon-down {

@@ -20,12 +20,15 @@
             body{
                 font-family: 'Share Tech Mono';
                 font-size: 14px;
+                margin:1em;
+                padding:0;
             }
             .sSlab{
                 border: 1px solid #dddddd;
                 padding: 1em;
                 max-width: 980px;
                 margin: 0 auto 1em auto;
+                clear:both;
             }
             ul.sgrid .sIcon,
             ul.sgrid .sIcon-social{
@@ -78,7 +81,10 @@
                 margin:0 0.5em 0 0;
             }
             h1{
-                line-height: 2em;
+                font-size:40px;
+                line-height: 1em;
+                margin:0;
+                padding:0;
             }
             h2{
                 line-height: 2em;
@@ -110,15 +116,43 @@
             em{
                 color: red;
             }
+            .lnkbtn{
+                background-color: #000;
+                height: 30px;
+                line-height: 30px;
+                color: #fff;
+                text-decoration: none;
+                border-radius: 5px;
+            }
+            .lnkbtn:active,
+            .lnkbtn:hover{
+                background-color: #666;
+            }
+            .lnkbtn.right{
+                padding: 5px 0 5px 10px;
+                margin-left:1em;
+            }
+            .lnkbtn.left{
+                padding: 5px 10px 5px 0;
+            }
+            .sClear{
+                float:none;
+                clear:both;
+            }
         </style>
     </head>
     <body>
-
+        <a name="top" style="margin-top:-2em;height:0;"></a>
         <div class="sgrid sPage">
             <div class="sSlab">
+                <a class="right lnkbtn" href="http://www.thesamp.com">www.thesamp.com<span class="sIcon sIcon-right sIcon-star-full"></span></a><a class="right lnkbtn" href="https://github.com/TheSamp/sampIcons" target="_blank"><span class="sIcon-social sIcon-right sIcon-github"></span>sampIcons in GitHub</a>
                 <h1>sampIcons</h1>
+                <div class="sClear"></div>
+            </div>
+            <div class="sSlab">
+                <p>Hi there,<br>sampIcons are free icon sets made with HTML, CSS & PNG. Released under GNU GENERAL PUBLIC LICENSE. It's not a full, comprehensive and bloated collection. Just icons that I use daily in my work. Sometimes speed is everything and these just help me a lot. I did this on my spare time so I couldn't care less if it works on IE8 or not. It actually doesn't but it can be made quite easily. Ask me how if you really need it and your life sucks. Balls.</p>
                 <h2><em>Click an icon to see it's markup.</em></h2>
-                <p>Include this file in your header:<br> <b>&lt;link type="text/css" rel="stylesheet" media="all" href="https://cdn.rawgit.com/TheSamp/sampIcons/master/sicons/sicons.css"&gt;</b><br> and presto! - <em>Except DON'T FORGET TO ADD background-color to .sIcon class</em>. Control position with adding .sIcon-left or .sIcon-right to .sIcon -element.</p>
+                <p>Include this file in your header:<br> <b>&lt;link type="text/css" rel="stylesheet" media="all" href="https://cdn.rawgit.com/TheSamp/sampIcons/master/sicons/sicons.css"&gt;</b><br> and presto! - <em>Except DON'T FORGET TO ADD background-color to .sIcon class</em>. Just pick a color, anything but WHITE. Control position with adding .sIcon-left or .sIcon-right to .sIcon -element.</p>
                 <div class="sgrid">
                     <div class="col-md-1-2 col-sm-1-1">
                         <h3>Icon colours</h3>
@@ -306,7 +340,14 @@
                        }
                 </script>
                 </ul>
+            </div>
+            <div class="sSlab">
+                <a class="left lnkbtn" href="#top"><span class="sIcon sIcon-left sIcon-up"></span>Back to top</a>
+                <a class="right lnkbtn" href="http://www.thesamp.com">www.thesamp.com<span class="sIcon sIcon-right sIcon-star-full"></span></a><a class="right lnkbtn" href="https://github.com/TheSamp/sampIcons" target="_blank"><span class="sIcon-social sIcon-right sIcon-github"></span>sampIcons in GitHub</a>
+                <div class="sClear"></div>
+            </div>
         </div>
+
         <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.7.1/jquery.min.js"></script>
         <script>!window.jQuery && document.write('<script src="../js/libs/jquery-1.7.1.min.js"><\/script>')</script>
         <script>
